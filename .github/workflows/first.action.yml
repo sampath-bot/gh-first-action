@@ -1,13 +1,20 @@
 name: first workflow
+
 on: workflow_dispatch
+# manually start చేయడానికి trigger
+
 jobs:
   first-job:
-    runs-on:
-      - ubuntu-latest
-      steps:
+    runs-on: ubuntu-latest
+    # job run అయ్యే runner (Linux machine)
+
+    steps:
       - name: print greeting
         run: echo "hello world"
+        # Step 1: hello world print అవుతుంది
+
       - name: print good bye
         run: echo "Done-bye"
-      
+        # Step 2: Done-bye print అవుతుంది
+
   
